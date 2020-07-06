@@ -1,0 +1,21 @@
+id: brennenstuhl_modulator
+label: Brennenstuhl Modulator
+category: '[Brennenstuhl]'
+
+templates:
+  imports: import brennenstuhl
+  make: brennenstuhl.modulator(${symbol_length}, ${ifs_length})
+
+parameters:
+  - id: symbol_length
+    label: Symbol Length
+    dtype: int
+  - id: ifs_length
+    label: Inter Frame Space Length (in symbols)
+    dtype: int
+
+outputs:
+  - label: mod
+    dtype: byte
+
+file_format: 1

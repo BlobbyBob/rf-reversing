@@ -1,0 +1,19 @@
+id: brennenstuhl_parser
+label: Brennenstuhl Parser
+category: '[Brennenstuhl]'
+
+templates:
+  imports: import brennenstuhl
+  make: brennenstuhl.parser(${debug})
+
+parameters:
+  - id: debug
+    label: Debug
+    dtype: bool
+    default: False
+
+inputs:
+  - id: packet
+    domain: message
+
+file_format: 1

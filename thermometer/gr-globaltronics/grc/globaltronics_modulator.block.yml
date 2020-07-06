@@ -1,0 +1,24 @@
+id: globaltronics_modulator
+label: Globaltronics Modulator
+category: '[Globaltronics]'
+
+templates:
+  imports: import globaltronics
+  make: globaltronics.modulator(${sample_rate}, ${repetitions})
+
+parameters:
+  - id: sample_rate
+    label: Sample Rate
+    dtype: int
+    default: samp_rate
+  - id: repetitions
+    label: Repetitions
+    dtype: int
+    default: 7
+
+
+outputs:
+  - label: out
+    dtype: byte
+
+file_format: 1

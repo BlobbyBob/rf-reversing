@@ -1,0 +1,35 @@
+id: brennenstuhl_demodulator
+label: Brennenstuhl Demodulator
+category: '[Brennenstuhl]'
+
+templates:
+  imports: import brennenstuhl
+  make: brennenstuhl.demodulator(${debug}, ${max_symbol_len}, ${min_symbol_len}, ${fixed_symbol_len})
+
+parameters:
+  - id: debug
+    label: Debug
+    dtype: bool
+    default: False
+  - id: max_symbol_len
+    label: Maximal Symbol Length
+    dtype: int
+    default: 300
+  - id: min_symbol_len
+    label: Minimal Symbol Length
+    dtype: int
+    default: 200
+  - id: fixed_symbol_len
+    label: Fixed Symbol Length in Samples (-1 to disable)
+    dtype: int
+    default: -1
+
+inputs:
+  - label: in
+    dtype: byte
+
+outputs:
+  - id: brennenstuhl_demod
+    domain: message
+
+file_format: 1

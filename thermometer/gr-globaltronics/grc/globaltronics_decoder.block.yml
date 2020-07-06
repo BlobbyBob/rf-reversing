@@ -1,0 +1,14 @@
+id: globaltronics_decoder
+label: Globaltronics Decoder
+category: '[Globaltronics]'
+
+templates:
+  imports: import globaltronics
+  make: globaltronics.decoder()
+
+inputs:
+  - id: globaltronics_decode
+    domain: message
+
+
+file_format: 1
