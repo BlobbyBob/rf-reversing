@@ -50,7 +50,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [40, 100.0]
+    coordinate: [24, 100.0]
     rotation: 0
     state: true
 - name: center_freq
@@ -83,7 +83,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [64, 236.0]
+    coordinate: [24, 236.0]
     rotation: 0
     state: true
 - name: samp_rate
@@ -117,7 +117,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [640, 244.0]
+    coordinate: [216, 276.0]
     rotation: 0
     state: true
 - name: blocks_file_sink_0
@@ -127,7 +127,7 @@ blocks:
     alias: ''
     append: 'False'
     comment: ''
-    file: /home/blobbybob/Documents/rf_hacking/thermometer/tx_test.signal
+    file: ''
     type: complex
     unbuffered: 'False'
     vlen: '1'
@@ -135,7 +135,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [1392, 396.0]
+    coordinate: [848, 308.0]
     rotation: 0
     state: enabled
 - name: blocks_float_to_complex_0
@@ -151,7 +151,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [672, 464.0]
+    coordinate: [528, 568.0]
     rotation: 0
     state: true
 - name: blocks_multiply_xx_0
@@ -169,7 +169,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [896, 400.0]
+    coordinate: [608, 400.0]
     rotation: 0
     state: true
 - name: blocks_null_source_0
@@ -188,7 +188,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [400, 496.0]
+    coordinate: [256, 600.0]
     rotation: 0
     state: true
 - name: blocks_uchar_to_float_0
@@ -203,7 +203,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [480, 464.0]
+    coordinate: [336, 568.0]
     rotation: 0
     state: true
 - name: globaltronics_modulator_0
@@ -220,9 +220,22 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [224, 452.0]
+    coordinate: [80, 556.0]
     rotation: 0
     state: enabled
+- name: note_0
+  id: note
+  parameters:
+    alias: ''
+    comment: ''
+    note: This is a sample flowgraph how a transmission flowgraph could look
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [256, 140.0]
+    rotation: 0
+    state: true
 - name: osmosdr_sink_0
   id: osmosdr_sink
   parameters:
@@ -481,7 +494,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [1376, 500.0]
+    coordinate: [832, 404.0]
     rotation: 0
     state: enabled
 - name: qtgui_waterfall_sink_x_0
